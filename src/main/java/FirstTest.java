@@ -42,8 +42,8 @@ public class FirstTest {
         Assert.assertEquals("IVAN", driver.findElement(FirstName).getText());
         Assert.assertEquals("IVANOV", driver.findElement(LastName).getText());
 
-
-        driver.findElement(By.xpath(".//button[contains(text(), 'В кошик')]")).click();
+        driver.findElement(By.xpath(".//button[@data-qa-node='submit']")).click();
+       
     }
 }
 
